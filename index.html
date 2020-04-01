@@ -30,18 +30,26 @@ div,.chart a{padding:2px 8px 4px 8px;border:1px solid #666;}
 </div>
 <span id="signup">
 <div>
+<b>[提示]</b><br />
+本站只提供公共账号的支持！<br />
+需要私有书签请使用：https://expanda.now.sh <br />
+</div>
+<div>
 <b>[密钥绑定]</b><br />
-<input id="exkey" placeholder="公共账号已作废，请使用私人账号。" oninput="check(this.value);" /><br />
+<input id="exkey" placeholder="使用公共账号" oninput="check(this.value);" /><br />
 </div>
 <div>
 <b>[账号注册]</b><br />
-注册地址：<a href="https://forums.e-hentai.org/?act=Reg" target="_blank"><u>https://forums.e-hentai.org/?act=Reg</u></a><br />
-中国大陆无法访问，需挂载拥有<b>私人IP</b>的<b>欧美V:P!И</b>，不能多人共用同IP。<br />
-使用<b>亚洲IP</b>注册的账户，也无法获得里区权限。V:P!И务必选用<b>欧美</b>节点。<br />
-建议用Gmail邮箱注册，使用<b>163、QQ等国内邮箱</b>注册账户无法获得权限。<br />
+<b><a href="https://t.me/acg_uy/3" ><u>点击查看注册教程 v2</u></a>（中国大陆无法访问）</b><br />
+<b>账号访问权限只与注册时的IP有关，请使用欧美原生IP。</b><br /><br /><br /><br />
+之前的注册教程（已修改误区）<br />
+注册地址：<a href="https://forums.e-hentai.org/?act=Reg" target="_blank"><u>https://forums.e-hentai.org/?act=Reg</u></a>
+中国大陆无法访问。<br />
+使用<b>亚洲IP</b>注册的账户，无法获得里区权限。请使用欧美原生IP注册。<br />
+建议用Gmail邮箱注册，使用<b>163、QQ等国内邮箱</b>注册账户也可获得权限（但可能收不到注册邮件）。<br />
 注册完成等待一周左右时间，账号应该就能获得里区权限，参照流程登录：<br />
-挂载<b>欧美V:P!И</b>，清空<b>浏览器COOKIE</b>，先<a href="https://e-hentai.org/bounce_login.php" target="_blank"><u><b>登录表站</b></u></a>，再<a href="https://exhentai.org/" target="_blank"><u><b>访问里站</b></u></a>。<br />
-如果还出现白屏，多等一周换个欧美V:P!И登录，再不行就是凉了。<br />
+使用<b>欧美原生IP</b>，清空<b>浏览器COOKIE</b>，先<a href="https://e-hentai.org/bounce_login.php" target="_blank"><u><b>登录表站</b></u></a>，再<a href="https://exhentai.org/" target="_blank"><u><b>访问里站</b></u></a>。<br />
+如果还出现白屏，多等一周换个欧美IP登录，再不行就是凉了。<br />
 </div>
 <div>
 <b>[密钥提取]</b><br />
@@ -69,7 +77,7 @@ Chrome商店进不去请改用<a href="https://www.firefox.com.cn/" target="_bla
 <div>
 <b>[添加脚本]</b><br />
 为油猴添加熊猫书签脚本：<br />
-<a id="monkey_link" target="_blank"><u><b>Panda.user.js</b></u></a><br />
+<a id="monkey_link" target="_blank"><u><b>添加脚本</b></u></a><br />
 </div>
 <div>
 <b>[解锁里站]</b><br />
@@ -105,9 +113,9 @@ Chrome商店进不去请改用<a href="https://www.firefox.com.cn/" target="_bla
 浏览了过多图片，请等待配额恢复或更换IP。<br />
 </div>
 <div class="chart">
-<a href="https://zeit.co/" target="_blank">ZEIT</a>
-<a href="https://github.com/noprogramming/expanda/issues" target="_blank">GitHub</a>
-<a href="https://rawgit.org/" target="_blank">RawGit</a>
+<a href="https://t.me/acg_uy/" target="_blank">Telegram 频道</a>
+<a href="https://github.com/TkzcM/expanda/" target="_blank">GitHub</a>
+<a href="https://github.com/noprogramming/expanda/" target="_blank">原作</a>
 </div>
 <script>
 function check(exkey){
@@ -130,7 +138,7 @@ document.getElementById(current).style.display='none';
 current=element;
 document.getElementById('button_'+element).style.fontWeight='bold';
 document.getElementById(element).style.display='';
-document.getElementById('monkey_link').href=(exkey?(exkey+'.'):'')+'panda.user.js';
+document.getElementById('monkey_link').href='panda.user.js';
 if(element=='origin'){
 var xhr=new XMLHttpRequest();
 xhr.open('GET','config?'+parseInt(Date.parse(new Date())/60000),true);
